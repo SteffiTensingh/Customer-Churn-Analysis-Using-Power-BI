@@ -49,8 +49,7 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
     SWITCH(
         TRUE,
         [credit_card] = 0, "No",
-        [credit_card] = 1, "Yes"
-         )
+        [credit_card] = 1, "Yes")
 
 * **Active Member Category**
     
@@ -58,8 +57,8 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
     SWITCH( 
         TRUE,
         [active_member] = 0, "No",
-        [active_member] = 1, "Yes"       
-    )
+        [active_member] = 1, "Yes")      
+    
     
 * **Credit Score Category**
     
@@ -67,8 +66,7 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
                                    [credit_score] >= 580 && [credit_score] <= 669, "Fair Score", 
                                    [credit_score] >= 670 && [credit_score] <= 739, "Good Score",
                                    [credit_score] >= 740 && [credit_score] <= 799, "Very Good Score",
-                                   [credit_score] >= 800 && [credit_score] <= 850, "Excellent Score"
-                              )
+                                   [credit_score] >= 800 && [credit_score] <= 850, "Excellent Score")
     
 * **Product Subscribed Category**
    
@@ -82,10 +80,9 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
         [estimated_salary] < 50000, "Low Income",
         [estimated_salary] >= 50000 && [estimated_salary] <= 100000, "Middle Income",
         [estimated_salary] > 100000, "High Income",
-        "Unknown"
-    )
-  
-  * **Balance Category**
+        "Unknown")
+
+* **Balance Category**
     
     Balance Category = 
     SWITCH(
@@ -95,8 +92,7 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
         [balance] > 50000 && [balance] <= 100000, "$50,001 and $100,000",
         [balance] > 100000 && [balance] <= 200000, "$100,001 and $200,000",
         [balance] > 200000 && [balance] <= 250898.09, "$200,001 and $250,898.09",
-        "Unknown"
-    )
+        "Unknown")
 
 
 ## DashBoard Preparation 
