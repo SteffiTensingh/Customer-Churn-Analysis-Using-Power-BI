@@ -36,7 +36,7 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
   Count_Unique_Customer = DISTINCTCOUNT(BankCustomerData[customer_id])
 * **Churned Customers**
   Count_Churned_Customer = Sum(BankCustomerData[churn])
-* **Churned Rate **
+* **Churned Rate**
   Churn_Rate = [Count_Churned_Customer] / [Count_Customer]
 * **Active Customers**
   Count_Active_Customer = Sum(BankCustomerData[active_member])
@@ -51,8 +51,8 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
         [credit_card] = 0, "No",
         [credit_card] = 1, "Yes"
          )
-  
-  * **Active Member Category**
+
+* **Active Member Category**
     
     Active Member Category = 
     SWITCH( 
@@ -61,7 +61,7 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
         [active_member] = 1, "Yes"       
     )
     
-  * **Credit Score Category**
+* **Credit Score Category**
     
      CreditScore_Category = SWITCH(TRUE,[credit_score] >= 300 && [credit_score] <= 579, "Poor Score",
                                    [credit_score] >= 580 && [credit_score] <= 669, "Fair Score", 
@@ -70,7 +70,7 @@ The dataset could be downloaded from https://www.kaggle.com/datasets/gauravtopre
                                    [credit_score] >= 800 && [credit_score] <= 850, "Excellent Score"
                               )
     
- * **Product Subscribed Category**
+* **Product Subscribed Category**
    
     Product Subscribed = SWITCH(TRUE, [products_number] = 1, "Product 1", [products_number] = 2, "Product 2", [products_number] = 3, "Product 3", [products_number] = 4, "Product 4")
    
